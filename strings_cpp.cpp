@@ -8,7 +8,10 @@ int main () {
         string line;
 
         while (getline (file, line)) {
-        cout << line;
-
+                for (char c : line){
+                        if ( 32 < int(c) &&  int(c) < 126){
+                                std::cout << c;
+                        }
+                }
         file.close();
 }}
