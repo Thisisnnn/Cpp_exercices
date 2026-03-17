@@ -3,10 +3,10 @@
 #include <string>
 using namespace std;
 
-int main () {
+int main (int main, char* argv[]) {
         string line;
         string characters;
-        ifstream file("test.txt");
+        ifstream file(argv[1]);
         if (!file) {  
                 cout<<"File doesn't exist.";          
         }
