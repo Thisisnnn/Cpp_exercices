@@ -1,14 +1,13 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-using namespace std;
 
 int main (int main, char* argv[]) {
-        string line;
-        string characters;
-        ifstream file(argv[0]);
+        std::string line;
+        std::string characters;
+        std::ifstream file(argv[1]);
         if (!file) {  
-                cout << "File doesn't exist." << endl;          
+                std::cout << "File doesn't exist." << std::endl;          
         }
         else{
         while (getline (file, line)) {

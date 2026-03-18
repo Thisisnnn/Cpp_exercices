@@ -3,17 +3,16 @@
 #include <string>
 #include <string.h>
 #include <regex>
-using namespace std;
 
 int main(int main, char *argv[]){
-    string line;
-    string characters;
-    ifstream file(argv[1]);
-    regex word(argv[2]);
-    smatch m;
+    std::string line;
+    std::string characters;
+    std::ifstream file(argv[1]);
+    std::regex word(argv[2]);
+    std::smatch m;
 
     if (!file){
-        cout << "File doesn't exist." << endl;
+        std::cout << "File doesn't exist." << std::endl;
     }
     else{
         while (getline(file, line)){
