@@ -6,7 +6,7 @@ using namespace std;
 int main (int main, char* argv[]) {
         string line;
         string characters;
-        ifstream file(argv[1]);
+        ifstream file(argv[0]);
         if (!file) {  
                 cout << "File doesn't exist." << endl;          
         }
@@ -18,13 +18,13 @@ int main (int main, char* argv[]) {
                                 }
                         else{
                                 if (characters.length() > 3){
-                                        std::cout << characters << "\n" << std::endl;
+                                        std::cout << characters << "\n";
                                         characters.clear();
                         }
                         }
                 }
         if (characters.length() > 3){
-                std::cout << characters << "\n" << std::endl;
+                std::cout << characters << "\n";
                 characters.clear();
         file.close();
         return 0;
