@@ -8,7 +8,7 @@ int main (int main, char* argv[]) {
         string characters;
         ifstream file(argv[1]);
         if (!file) {  
-                cout<<"File doesn't exist.";          
+                cout << "File doesn't exist." << endl;          
         }
         else{
         while (getline (file, line)) {
