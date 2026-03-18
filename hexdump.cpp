@@ -18,7 +18,7 @@ int main(int main, char *argv[])
         {
             for (char c : line)
                 if (isprint(c))
-                    std::cout << std::hex << (int)c;
+                    std::cout << std::hex << (int)c << " ";
         }
     }
     return 0;
