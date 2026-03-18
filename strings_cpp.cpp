@@ -18,13 +18,13 @@ int main (int main, char* argv[]) {
                                 }
                         else{
                                 if (characters.length() > 3){
-                                        std::cout << characters << "\n";
+                                        std::cout << characters << "\n" << std::endl;
                                         characters.clear();
                         }
                         }
                 }
         if (characters.length() > 3){
-                std::cout << characters << "\n";
+                std::cout << characters << "\n" << std::endl;
                 characters.clear();
         file.close();
         return 0;
