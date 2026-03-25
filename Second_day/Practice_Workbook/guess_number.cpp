@@ -7,7 +7,7 @@
 int main(){
     srand(time(0));
     int number = rand() % 101; //Generate a number between 1 and 100
-    std::cout << number << std::endl;
+    // std::cout << number << std::endl;
     int guess;
     int attempts;
     char choice;
