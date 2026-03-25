@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <string.h>
 #include <regex>
 
 int main(int main, char *argv[]){
