@@ -2,10 +2,10 @@
 #include <ostream>
 
 int main(){
-    int first_number;
-    int second_number;
+    double first_number;
+    double second_number;
     char operators;
-    int result;
+    double result;
     std::cout << "Enter the first number: ";
     std::cin >> first_number;
     std::cout << "Enter the second number: ";
