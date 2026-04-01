@@ -1,5 +1,8 @@
+#include <cstddef>
 #include <iostream>
+#include <string>
 #include <vector>
+
 class ShoppingList {
 private:
     std::string character;
@@ -22,8 +25,8 @@ public:
     list.pop_back();
   }
 
-  void count(){
-    std::cout << list.size() << std::endl;
+  size_t count(){
+    return list.size();
   }
 
   void clear() {
@@ -32,7 +35,10 @@ public:
     }
   }
 
-  void isEmpty(){
-    std::cout << list.empty() << std::endl;
+  std::string isEmpty(){
+    if (list.empty()) {
+      return "The list is empty!";
+    }
+    return "The list is not empty!";
   }
 };

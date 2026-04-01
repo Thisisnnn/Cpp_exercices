@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "ex01_shopping_list.hpp"
 
 int main() {
@@ -10,8 +11,7 @@ int main() {
     list.addItem("Butter");
 
     list.display();
-    //std::cout << "Total items: " << list.count() << std::endl;
-
+    std::cout << "Total items: " << list.count() << std::endl;
     std::cout << "removing the last item..." << std::endl;
     list.removeItem();
     list.display();
@@ -20,8 +20,7 @@ int main() {
     list.clear();
     list.display();
 
-    //std::cout << "Empty?" << std::endl;
-    //std::cout << list.isEmpty() << std::endl;
+    std::cout << list.isEmpty() << std::endl;
 
 
     return 0;
