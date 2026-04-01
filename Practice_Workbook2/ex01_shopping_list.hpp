@@ -5,7 +5,6 @@
 
 class ShoppingList {
 private:
-    std::string character;
     std::vector<std::string> list;
 
 public:
